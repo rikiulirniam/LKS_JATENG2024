@@ -1,0 +1,141 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: greenyellow 1px solid; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+  background-color: gray;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#welcomescreen {
+  display: flex;
+  justify-content: space-around;
+}
+#welcomescreen > .inputPlayer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 700px;
+}
+.instruction {
+  width: 600px;
+  height: 700px;
+  background-color: black;
+  display: none;
+}
+.buttonClose {
+  background-color: red;
+  padding: 0.4em;
+  color: white;
+  align-self: start;
+}
+.rules {
+  padding: 5em;
+  color: white;
+}
+input,
+select {
+  padding: 0.5em 1em;
+  margin: 0.5em 0;
+  width: 100%;
+  color: black;
+}
+.selectLevel {
+  color: black;
+}
+.selectgun,
+.selecttarget {
+  display: flex;
+}
+.selectgun > div,
+.selecttarget > div {
+  display: flex;
+  padding: 1em;
+  flex-direction: column;
+}
+.buttonAction {
+  display: flex;
+  gap: 1em;
+}
+.playButton {
+  background-color: green;
+  padding: 1em;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.instructionButton {
+  border: none;
+  background-color: brown;
+  color: white;
+  border-radius: 5px;
+  padding: 1em;
+  cursor: pointer;
+}
+
+.containergame {
+  display: flex;
+}
+#gamescreen {
+  display: none;
+}
+.canvas {
+  width: 800px;
+  height: 600px;
+  background-color: white;
+  cursor: url("./Sprites/pointer.png") 25 25, auto;
+}
+.gameboard {
+  background: url("./Sprites/background.jpg");
+}
+.leaderboard {
+  background-color: black;
+  width: 200px;
+  height: 600px;
+  color: white;
+}
+.leaderboard h2 {
+  text-align: center;
+  padding: 1em 0;
+  border-bottom: 4px solid white;
+}
+
+.leaderboard > ul > li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+}
+.buttonDetail {
+  padding: 0.1em 0.5em;
+  background-color: yellow;
+}
+.infoGames {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gameOver {
+  /* display: none; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  height: 90vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

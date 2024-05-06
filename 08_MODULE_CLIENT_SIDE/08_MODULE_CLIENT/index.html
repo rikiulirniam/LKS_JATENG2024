@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shooter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="welcomescreen">
+        <div class="inputPlayer">
+          <img src="./Sprites/shooter.png" alt="" width="300" class="banner" />
+          <input class="username" type="text" placeholder="Input Username" />
+          <select name="" class="selectlevel">
+            <option selected disabled>Select level</option>
+            <option value="Easy">Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+          </select>
+
+          <div class="selectgun">
+            <div>
+              <label for="gun1"
+                ><img src="./Sprites/gun1.png" width="100" alt="" /> </label
+              ><input type="radio" name="" id="gun1" />
+            </div>
+            <div>
+              <label for="gun2">
+                <img src="./Sprites/gun2.png" width="100" alt="" /></label
+              ><input type="radio" name="" id="gun2" />
+            </div>
+          </div>
+
+          <div class="selecttarget">
+            <div>
+              <label for="target1"
+                ><img src="./Sprites/target1.png" width="100" alt="" /> </label
+              ><input type="radio" name="" id="target1" />
+            </div>
+            <div>
+              <label for="target2"
+                ><img src="./Sprites/target2.png" width="100" alt="" /> </label
+              ><input type="radio" name="" id="target2" />
+            </div>
+            <div>
+              <label for="target3"
+                ><img src="./Sprites/target3.png" width="100" alt="" /> </label
+              ><input type="radio" name="" id="target3" />
+            </div>
+          </div>
+          <div class="buttonAction">
+            <button class="playButton" disabled>Play Game</button>
+            <button class="instructionButton">Instruction</button>
+          </div>
+        </div>
+
+        <div class="instruction">
+          <button class="buttonClose">X</button>
+          <div class="rules">
+            <h1>How To Play Game</h1>
+            <ol style="padding: 1em">
+              <li><h3>Input username</h3></li>
+              <li><h3>Point pointer at the target</h3></li>
+              <li><h3>Click to shoot</h3></li>
+              <li><h3>Get as many point as possible</h3></li>
+              <li><h3>Enjoy</h3></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <div class="containergame">
+        <div id="gamescreen">
+          <div class="canvas">
+            <div class="infoGames">
+              <h4>Player name : <span class="usernameInfo"></span></h4>
+              <h4>Score : <span class="scoreInfo">0</span></h4>
+              <h4>Timer : <span class="timerInfo"></span></h4>
+            </div>
+            <canvas class="gameboard"></canvas>
+          </div>
+          <div class="leaderboard">
+            <h2>Leaderboard</h2>
+            <ul>
+              <li>
+                <div class="lIdentity">
+                  <h3>Riki</h3>
+                  <h5>Score : <span>23</span></h5>
+                </div>
+                <button class="buttonDetail">Detail</button>
+              </li>
+              <li>
+                <div class="lIdentity">
+                  <h3>Niam</h3>
+                  <h5>Score : <span>44</span></h5>
+                </div>
+                <button class="buttonDetail">Detail</button>
+              </li>
+              <li>
+                <div class="lIdentity">
+                  <h3>Pradita</h3>
+                  <h5>Score : <span>38</span></h5>
+                </div>
+                <button class="buttonDetail">Detail</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- <div class="gameOver">
+          <h1>Game Over</h1>
+          <h3>Player name : <span class="resultName"></span></h3>
+          <h3>Score : <span class="resultScore"></span></h3>
+        </div>
+      </div> -->
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
